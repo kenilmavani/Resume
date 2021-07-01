@@ -1,0 +1,148 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Kenil Mavani}
+\newcommand{\yourWebsite}{}
+\newcommand{\yourEmail}{kenilmavani68@gmail.com}
+\newcommand{\yourPhone}{9726134456}
+\newcommand{\hackerearthUserName}{@kenil1}
+\newcommand{\linkedInUserName}{kenil-mavani}
+
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsite}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsite}{abdullaharif.tech}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+    \small \yourPhone $|$ \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
+    \href{https://linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://hackerearth.com/\hackerearthUserName}{\underline{hackerearth/\hackerearthUserName}}
+\end{center}
+
+%--------------------------------------------------------------
+%     GOAL
+%--------------------------------------------------------------
+\section{Goal}
+    Being enthusiastic coder I enjoy to explore and learn the new and upcoming technologies. I thus wish to serve in your esteemed organization and witness the growth of organization along with myself growth.\\
+\sectionsep
+
+\hspace{1cm}
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Supertax}{Software Development Engineer}{Mumbai, IN}{Jun 2019 – present}
+\begin{tightemize}
+    \item Working on JAVA \textbf{spring boot} application.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Providing end-to-end solutions, Solving complex problems, architecture, design, and development tasks, Designed and implemented data storage solutions, Designed new features and services to support client applications with use of Multi-threading, Hibernate, Redis, Rest API, Java, ReactJS, Maven, Flyway, MySql, Linux, Jenkins, GIT.
+    \item Setup a CI/CD pipeline and exceeded requirements in each stage, which lead to the application being pushed to production.
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Square Infosoft}{Software Trainee}{Surat,In}{May 2018 - July 2018}
+\begin{tightemize}
+    \item Developed design for Railway ticket booking system \textbf{(ConfirmTicket)} in SWIFT.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\hspace{1cm}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Swap degree and school if your school is reputable
+\educationHeading{B.E in Computer Engineering }{Saravjanik College of Engineering and Technology (7.4/10 CGPA)}{Surat, IN}{May 2019}
+
+% \courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}
+\sectionsep
+
+\hspace{1cm}
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\Project{DIGI - LYCEUM}{https://github.com/kenilmavani/navigation}
+\descript{Unity,Vuforia,Ionic}\\
+We incorporated AR into indoor positioning and designed a novel user interface with a compelling application that delivers an interactive indoor navigation experience through AR graphical views aligned with indoor objects.\\
+\sectionsep
+  
+\Project{ChatBot}{https://github.com/kenilmavani/chatadmin}
+\descript{Python, Dialogflow, Ngrok}\hfill \\
+I created a chat bot for Admin process inquires for students.They can use it on their google assistant by saying hello admin.\\
+\sectionsep
+
+\Project{E-HelthCard}{}
+\descript{PHP,CSS,HTML,MYSQL}\hfill \\
+Smart Health card is a digital healthcare solution it uses cloud EHR(Electronic Health
+Record) technology, by providing users the power to carry their health records in
+portable, user friendly and secure manner. It saves time for patient and for providers
+that avoids unnecessary delays and tests while protecting patients private
+information. The vital part is that it could be accessed in case of travel, emergency or
+routine medical visit. It consists Medical records like PATH Lab Tests, Blood Reports,
+Prescriptions, X-Ray, C.T. Scan, Sonography Reports, Bone Marrow Profile, Allergy
+Tests etc.
+\sectionsep
+
+\Project{Hotel Management System}{}
+\descript{JAVA,servlet,HTML,MYSQL}\hfill \\
+A program that authenticates users based on their typing patterns. And a spoofer that uses the genetic algorithm to mimic the user's typing pattern.
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{resumeSkillList}
+    \singleItem{Languages:}{Java8, C++, Python, PHP, Bash, C, SQL}
+    \\
+    \singleItem{Web Development:}{HTML/CSS}
+    \\
+    \singleItem{Technology:}{Git, AWS, Docker, Apache,DBMS,Spring Boot,MVC,CI/CD,Devops}
+\end{resumeSkillList}
+
+ % A more concise alternate 
+% \begin{resumeSkillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{resumeSkillList}
+\end{document}
